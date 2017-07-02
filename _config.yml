@@ -5,6 +5,9 @@ collections:
   know-bugs:
     title: Known Bugs
     output: true
+  ps4-patches:
+    title: PS4 Patches
+    output: true
   posts:
     title: Posts
     output: true
