@@ -15,7 +15,6 @@ author_email: you@example.com
 category_dir: "/"
 baseurl: 
 url: http://yourdomain.com/
-markdown: rdiscount
 permalink: pretty
 paginate: 3
 exclude:
