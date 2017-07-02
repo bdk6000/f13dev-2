@@ -3,7 +3,9 @@ title: Home
 layout: default
 ---
 
-<div style="width:50%;float:left;">
+<br /><br />
+
+<div style="width:45%;float:left;padding-right:45px;">
 <div class="tab">
   <button class="tablinks" onclick="openCity(event, 'Xbox')">Xbox One</button>
   <button class="tablinks" onclick="openCity(event, 'PS4')">PS4</button>
@@ -38,7 +40,7 @@ layout: default
 </div>
 
 
-<div style="width:50%;float:left;">
+<div style="width:45%;float:left;">
 <h3>Known Bugs</h3>
 
   {% for post in site.know-bugs %}
@@ -52,12 +54,13 @@ layout: default
 
 <div style="clear:both;"></div>
 
+<hr />
 
-<h3>Future Releases</h3>
+<center><h2>Future Releases</h2></center>
 
   {% for post in site.future-releases %}
             <ul>
-          <li><span style="font-size: 15px;">{{ post.title }}</span><br /><img src="{{ post.image }}" /></li>
+          <li style="width:45%;float:left;padding-right:40px;"><span style="font-size: 15px;">{{ post.title }}</span><br /><img style="width:100%;height:auto;" src="{{ post.image }}" /></li>
         </ul>
 
     {% endfor %}
