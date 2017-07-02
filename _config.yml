@@ -5,6 +5,9 @@ collections:
   know-bugs:
     title: Known Bugs
     output: true
+  pc-patches:
+    title: PC Patches
+    output: true
   ps4-patches:
     title: PS4 Patches
     output: true
