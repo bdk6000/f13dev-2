@@ -23,9 +23,9 @@ collections:
   xbox-one-patches:
     title: Xbox One Patches
     output: true
-name: Sample Jekyll Blog
-description: This is a sample Jekyll Blog.
-author: Your Name
+name: F13 Dev Notes
+description: Developer notes for Friday the 13th
+author: F13 Dev Notes
 author_email: you@example.com
 category_dir: "/"
 baseurl: 
