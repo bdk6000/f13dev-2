@@ -31,7 +31,7 @@ defaults:
     path: ''
     type: released
   values:
-    image: ""
+    image: ''
 name: F13 Dev Notes
 description: Developer notes for Friday the 13th
 author: F13 Dev Notes
