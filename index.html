@@ -80,6 +80,24 @@ layout: default
 
     {% endfor %}
 
+
+<div style="margin-top:40px;margin-bottom:40px;">
+<hr />
+</div>
+
+<center><h2>Released</h2></center>
+
+<div style="margin-top:40px;margin-bottom:40px;">
+<hr />
+</div>
+
+  {% for post in site.released %}
+            <ul>
+          <li style="width:20%;float:left;padding-right:20px;"><span style="font-size: 15px;">{{ post.title }}</span><br /><br /><img style="width:100%;height:auto;" src="{{ post.image }}" /></li>
+        </ul>
+
+    {% endfor %}
+
 <script>
 function openCity(evt, cityName) {
     var i, tabcontent, tablinks;
