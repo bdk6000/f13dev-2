@@ -25,7 +25,12 @@
 
         <main>
 
-            {{ content }}
+            {% for post in site.xbox-one-patches %}
+        <ul>
+          <li><span style="font-size: 15px;">{{ post.title }}</span></li>
+        </ul>
+
+    {% endfor %}
 
         </main>
 
