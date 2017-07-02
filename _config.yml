@@ -3,7 +3,7 @@ title: F13dev 2
 timezone: UTC
 collections:
   know-bugs:
-    title: Know Bugs
+    title: Known Bugs
     output: true
   posts:
     title: Posts
