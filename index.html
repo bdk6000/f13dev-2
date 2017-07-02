@@ -12,7 +12,7 @@ layout: default
   <button class="tablinks" onclick="openCity(event, 'PC')">PC</button>
 </div>
 
-<div id="Xbox" >
+<div id="Xbox" class="tabcontent" style="display:block;">
    {% for post in site.xbox-one-patches %}
         <ul>
           <li><span style="font-size: 15px;">{{ post.title }}</span></li>
@@ -60,7 +60,7 @@ layout: default
 
   {% for post in site.future-releases %}
             <ul>
-          <li style="width:45%;float:left;padding-right:40px;"><span style="font-size: 15px;">{{ post.title }}</span><br /><img style="width:100%;height:auto;" src="{{ post.image }}" /></li>
+          <li style="width:45%;float:left;padding-right:40px;"><span style="font-size: 15px;">{{ post.title }}</span><br /><br /><img style="width:100%;height:auto;" src="{{ post.image }}" /></li>
         </ul>
 
     {% endfor %}
