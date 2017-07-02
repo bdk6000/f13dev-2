@@ -13,7 +13,7 @@ layout: default
 </div>
 
 <div id="Xbox" class="tabcontent" style="display:block;">
-   {% for post in site.xbox-one-patches %}
+   {% for post in site.xbox-one-patches limit:3 %}
         <ul>
           <li><span style="font-size: 15px;">{{ post.title }}</span></li>
         </ul>
