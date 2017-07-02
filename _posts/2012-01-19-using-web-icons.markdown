@@ -1,10 +1,11 @@
 ---
-layout: post
 title: Using the Web Icons
-category: Design
-
-excerpt: Quick overview on how to use the Typicon web font icons included with this template. 
-
+date: 2012-01-19 00:00:00 Z
+categories:
+- Design
+layout: post
+excerpt: Quick overview on how to use the Typicon web font icons included with this
+  template.
 ---
 
 This template uses [Typicons][ty] web font, provided by [Fontello][fo] font bundling service. It allows you to quickly

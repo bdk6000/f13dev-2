@@ -1,11 +1,11 @@
 ---
-layout: post
 title: Guest Posts
-category: Meta
+date: 2012-03-15 00:00:00 Z
+categories:
+- Meta
+layout: post
 author: John Smith
-
-excerpt: How to quickly create guest blogs with a different author. 
-
+excerpt: How to quickly create guest blogs with a different author.
 ---
 
 If you want to create a guest post that will appear as if written by another author, simply add an `author` attribute to the 
