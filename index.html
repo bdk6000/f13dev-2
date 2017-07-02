@@ -3,6 +3,59 @@ title: Home
 layout: default
 ---
 
+
+<h3>Xbox One Patches</h3>
+
+  {% for post in site.xbox-one-patches %}
+        <ul>
+          <li><span style="font-size: 15px;">{{ post.title }}</span></li>
+        </ul>
+
+    {% endfor %}
+
+
+<h3>PS4 Patches</h3>
+
+  {% for post in site.ps4-patches %}
+        <ul>
+          <li><span style="font-size: 15px;">{{ post.title }}</span></li>
+        </ul>
+
+    {% endfor %}
+
+
+<h3>PC Patches</h3>
+
+  {% for post in site.pc-patches %}
+        <ul>
+          <li><span style="font-size: 15px;">{{ post.title }}</span></li>
+        </ul>
+
+    {% endfor %}
+
+
+<h3>Known Bugs</h3>
+
+  {% for post in site.know-bugs %}
+        <ul>
+          <li><span style="font-size: 15px;">{{ post.title }}</span></li>
+        </ul>
+
+    {% endfor %}
+
+
+<h3>Releases</h3>
+
+  {% for post in site.future-releases %}
+            <ul>
+          <li><span style="font-size: 15px;">{{ post.title }}</span></li>
+        </ul>
+
+    {% endfor %}
+
+
+
+
 <!-- Show last 5 posts here -->
 {% for post in paginator.posts %}
 	<article>
