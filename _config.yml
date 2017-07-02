@@ -42,3 +42,14 @@ exclude:
 - Gruntfile.js
 - Gruntfile.coffee
 - node_modules
+
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "released"
+    values:
+      image:
+        latitude: 
+        longitude: 
