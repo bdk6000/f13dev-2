@@ -18,7 +18,7 @@ collections:
     title: Posts
     output: true
   released:
-    title: Released
+    title: Release
     output: true
   uploads:
     title: Uploads
