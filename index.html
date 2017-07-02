@@ -3,34 +3,40 @@ title: Home
 layout: default
 ---
 
-<h3>Xbox One Patches</h3>
 
-  {% for post in site.xbox-one-patches %}
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Xbox')">Xbox One</button>
+  <button class="tablinks" onclick="openCity(event, 'PS4')">PS4</button>
+  <button class="tablinks" onclick="openCity(event, 'PC')">PC</button>
+</div>
+
+<div id="Xbox" class="tabcontent">
+   {% for post in site.xbox-one-patches %}
         <ul>
           <li><span style="font-size: 15px;">{{ post.title }}</span></li>
         </ul>
 
     {% endfor %}
+</div>
 
+<div id="PS4" class="tabcontent">
+   {% for post in site.ps4-patches %}
+        <ul>
+          <li><span style="font-size: 15px;">{{ post.title }}</span></li>
+        </ul>
+    {% endfor %}
+</div>
 
-<h3>PS4 Patches</h3>
-
-  {% for post in site.ps4-patches %}
+<div id="PC" class="tabcontent">
+{% for post in site.pc-patches %}
         <ul>
           <li><span style="font-size: 15px;">{{ post.title }}</span></li>
         </ul>
 
     {% endfor %}
+</div>
 
-
-<h3>PC Patches</h3>
-
-  {% for post in site.pc-patches %}
-        <ul>
-          <li><span style="font-size: 15px;">{{ post.title }}</span></li>
-        </ul>
-
-    {% endfor %}
 
 
 <h3>Known Bugs</h3>
