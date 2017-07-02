@@ -2,6 +2,9 @@
 title: F13dev 2
 timezone: UTC
 collections:
+  future-releases:
+    title: Future Releases
+    output: true
   know-bugs:
     title: Known Bugs
     output: true
