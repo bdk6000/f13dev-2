@@ -61,9 +61,8 @@ a:hover {
 
 main {
 
-	width: 75%;
+	width: 100%;
 	min-width: 600px;
-	margin-left: 150px;
 	display: block;
 }
 
