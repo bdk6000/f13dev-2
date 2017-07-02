@@ -26,7 +26,6 @@ collections:
   xbox-one-patches:
     title: Xbox One Patches
     output: true
-      
 name: F13 Dev Notes
 description: Developer notes for Friday the 13th
 author: F13 Dev Notes
