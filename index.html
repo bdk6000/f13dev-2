@@ -3,13 +3,14 @@ title: Home
 layout: default
 ---
 
+<div style="width:50%;float:left;">
 <div class="tab">
   <button class="tablinks" onclick="openCity(event, 'Xbox')">Xbox One</button>
   <button class="tablinks" onclick="openCity(event, 'PS4')">PS4</button>
   <button class="tablinks" onclick="openCity(event, 'PC')">PC</button>
 </div>
 
-<div id="Xbox" class="tabcontent">
+<div id="Xbox" >
    {% for post in site.xbox-one-patches %}
         <ul>
           <li><span style="font-size: 15px;">{{ post.title }}</span></li>
@@ -34,9 +35,10 @@ layout: default
 
     {% endfor %}
 </div>
+</div>
 
 
-
+<div style="width:50%;float:left;">
 <h3>Known Bugs</h3>
 
   {% for post in site.know-bugs %}
@@ -45,6 +47,10 @@ layout: default
         </ul>
 
     {% endfor %}
+  
+</div>
+
+<div style="clear:both;"></div>
 
 
 <h3>Future Releases</h3>
