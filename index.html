@@ -45,7 +45,7 @@ layout: default
 <div style="width:45%;float:left;">
 <h3>Known Bugs</h3>
 
-  {% for post in site.know-bugs %}
+  {% for post in site.know-bugs limit:5 %}
         <ul>
           <li><span style="font-size: 15px;">{{ post.title }}</span></li>
         </ul>
