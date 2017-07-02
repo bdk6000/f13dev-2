@@ -11,6 +11,9 @@ collections:
   uploads:
     title: Uploads
     output: true
+  xbox-one-patches:
+    title: Xbox One Patches
+    output: true
 name: Sample Jekyll Blog
 description: This is a sample Jekyll Blog.
 author: Your Name
