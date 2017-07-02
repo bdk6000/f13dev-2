@@ -31,9 +31,7 @@ defaults:
     path: ''
     type: released
   values:
-    image:
-      latitude: 
-      longitude: 
+    image: ""
 name: F13 Dev Notes
 description: Developer notes for Friday the 13th
 author: F13 Dev Notes
