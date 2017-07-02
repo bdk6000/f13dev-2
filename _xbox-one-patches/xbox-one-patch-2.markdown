@@ -1,5 +1,5 @@
 ---
-title: Xbox One Patch 2
+title: Fixed getting stuck when interacting with drawers
 date: 2017-07-02 00:56:00 Z
 ---
 
