@@ -13,7 +13,7 @@ layout: default
 </div>
 
 <div id="Xbox" class="tabcontent" style="display:block;">
-   {% for post in site.xbox-one-patches limit:3 %}
+   {% for post in site.xbox-one-patches limit:8 %}
         <ul>
           <li><span style="font-size: 15px;">{{ post.title }}</span></li>
         </ul>
@@ -23,20 +23,21 @@ layout: default
 </div>
 
 <div id="PS4" class="tabcontent">
-   {% for post in site.ps4-patches %}
+   {% for post in site.ps4-patches limit:8 %}
         <ul>
           <li><span style="font-size: 15px;">{{ post.title }}</span></li>
         </ul>
     {% endfor %}
+  <p><a href="/ps4-patches">Read Full List</a></p>
 </div>
 
 <div id="PC" class="tabcontent">
-{% for post in site.pc-patches %}
+{% for post in site.pc-patches limit:8 %}
         <ul>
           <li><span style="font-size: 15px;">{{ post.title }}</span></li>
         </ul>
-
     {% endfor %}
+  <p><a href="/pc-patches">Read Full List</a></p>
 </div>
 </div>
 
