@@ -296,9 +296,9 @@ layout: default
 			  
 			    
 			      
-			    {% for doc in site.documents limit:5 %}
+			    {% for doc in site.documents %}
 			    
-			    {% if doc.collection == "future-releases" %}
+			    {% if doc.collection == "released" %}
 
 			    
 			    
@@ -316,7 +316,7 @@ layout: default
                             </div>
                         </div>
 			  
-{% endif %}  
+		       {% endif %}  
 			
                        {% endfor %}
             
