@@ -260,7 +260,7 @@ layout: default
 			    
 			    {% for post in site.released limit:5 %}
 			    <div class="col-4 col">
-                            <div class="post-block">
+                            <div class="post-block" onclick="javascript:location.href='{{ post.url }}'">
                                 <div class="block-area">
 
                                 </div>
