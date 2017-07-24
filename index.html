@@ -303,7 +303,7 @@ layout: default
 			  <div class="col-4 col">
                             <div class="post-block{% if doc.collection == 'released-packs' %} post-img-block{% endif %}" onclick="javascript:location.href='{{ doc.url }}'">
                                 <div class="block-area">
-
+ 				{% if doc.collection == "released-packs" %}<div class="block-img" style="background-image:url({{ doc.image }})"></div>{% endif %}
                                 </div>
                                 <div class="block-overlay">
                                     <div class="overlay-desc">
