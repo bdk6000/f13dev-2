@@ -294,8 +294,8 @@ layout: default
 			    
 			    
 			    
-			    {% for doc in site.documents limit:5 %}
-  {% if doc.collection == "site.released" or doc.collection == "site.released-packs" %}
+             {% for doc in site.documents%}
+             {% if doc.collection == "released" or doc.collection == "released-packs" %}
 
 		<div class="col-4 col">
                             <div class="post-block" onclick="javascript:location.href='{{ post.url }}'">
@@ -311,8 +311,8 @@ layout: default
                             </div>
                         </div>	    
 			    
-  {% endif %}
-{% endfor %}
+             {% endif %}
+             {% endfor %}
 			
 			    
 			    
