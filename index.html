@@ -275,6 +275,24 @@ layout: default
                        {% endfor %}
 			    
 			    
+			     {% for post in site.released-packs limit:5 %}
+			     <div class="col-4 col">
+                            <div class="post-block post-img-block" onclick="javascript:location.href='{{ post.url }}'">
+                                <div class="block-area ">
+                                    <div class="block-img" style="background-image:url(images/release-img2.jpg)"></div>
+
+                                </div>
+                                <div class="block-overlay">
+                                    <div class="overlay-desc">
+                                        <h3><a href="#">{{ post.title }}</a>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       {% endfor %}
+			    
+			    
 			    
 			 
                     </div> 
