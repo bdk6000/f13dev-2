@@ -76,7 +76,7 @@ layout: default
                                             <ul class="list-style">
                                             {% for post in site.xbox-one-patches limit:5 %}
                                                 <li>{{ post.title }}</li>
-											{% endfor %}
+					    {% endfor %}
                                             </ul>
                                             <div class="cta">
                                                 <a href="/xbox-one-patches" class="btn" title="Read all">Read all</a>
@@ -85,25 +85,23 @@ layout: default
                                         <div id="tab-2" class="tab-content">
                                         <h3>PS4 Squished bugs</h3>
                                             <ul class="list-style">
-                                                <li>New intro cinematics for Tommy Jarvis spawn,Game Intro,and Game Outro</li>
-                                                <li>Fixed crash for VoIP that would during gameplay</li>
-                                                <li>Fix for out of memory crash with a bug in the texture system bloating out textures after playing a couple of rounds.</li>
-                                                <li>New intro cinematics for Tommy Jarvis spawn, Game Intro, and Game Outro</li>
+                                            {% for post in site.ps4-patches limit:5 %}
+                                                <li>{{ post.title }}</li>
+					    {% endfor %}
                                             </ul>
                                             <div class="cta">
-                                                <a href="#" class="btn" title="Read all">Read all</a>
+                                                <a href="/ps4-patches" class="btn" title="Read all">Read all</a>
                                             </div>
                                         </div>
                                         <div id="tab-3" class="tab-content">
                                         <h3> PC Squished bugs</h3>
                                             <ul class="list-style">
-                                                <li>New intro cinematics for Tommy Jarvis spawn,Game Intro,and Game Outro</li>
-                                                <li>Fixed crash for VoIP that would during gameplay</li>
-                                                <li>Fix for out of memory crash with a bug in the texture system bloating out textures after playing a couple of rounds.</li>
-                                                <li>New intro cinematics for Tommy Jarvis spawn, Game Intro, and Game Outro</li>
+                                            {% for post in site.pc-patches limit:5 %}
+                                                <li>{{ post.title }}</li>
+					    {% endfor %}
                                             </ul>
                                             <div class="cta">
-                                                <a href="#" class="btn" title="Read all">Read all</a>
+                                                <a href="/pc-patches" class="btn" title="Read all">Read all</a>
                                             </div>
                                         </div>
                                     </div>
@@ -119,13 +117,11 @@ layout: default
                             <div class="fix-description alert-description">
                                 <h3>Known Issues</h3>
                                 <ul class="list-style">
-                                    <li>New intro cinematics for Tommy Jarvis spawn, Game Intro, and Game Outro</li>
-                                    <li>Fixed crash for VoIP that would during gameplay</li>
-                                    <li>Fix for out of memory crash with a bug in the texture system bloating out textures after playing a couple of rounds.</li>
-                                    <li>New intro cinematics for Tommy Jarvis spawn, Game Intro, and Game Outro</li>
-                                    <li>Fixed crash for VoIP that would during gameplay</li>
+                                            {% for post in site.know-bugs limit:5 %}
+                                                <li>{{ post.title }}</li>
+					    {% endfor %}
                                 </ul>
-                                <a href="#" class="btn" title="Read all">Read all</a>
+                                <a href="/known-bugs" class="btn" title="Read all">Read all</a>
                             </div>
                         </div>
                     </div>
