@@ -1,49 +1,27 @@
-<!DOCTYPE html>
+{% include header.html %}
 
-<html>
-    <head>
-        <meta charset="utf-8"/>
-        <title>{% if page.title %} {{ page.title }} | {% endif %} {{ site.name }}</title>
-        <link rel="stylesheet" href="{{site.baseurl}}/style.css" />
-        <meta name="description" content="{{site.description}}"/>
-        <meta name="author" content="{{site.author}}"/>
-        <link rel="author" href="humans.txt"/>
-        <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="{{site.baseurl}}/feed.xml" />
-
-        <link rel="stylesheet" href="{{site.baseurl}}/resources/fontello/css/fontello.css">
-        <link rel="stylesheet" href="{{site.baseurl}}/resources/fontello/css/animation.css">
-        <!--[if IE 7]><link rel="stylesheet" href="{{site.baseurl}}/resources/fontello/css/fontello-ie7.css"><![endif]-->
-    </head>
-
-    <body>
-        <header>
-            <h1><a href="{{site.baseurl}}/">{{ site.name }}</a></h1>
-            <hr />
-        </header>
-
-     
-
-        <main>
-            
-            <h3>PC Patches</h3>
-
-            {% for post in site.pc-patches %}
-        <ul>
-          <li><span style="font-size: 15px;">{{ post.title }}</span></li>
-        </ul>
-
-    {% endfor %}
-            
-            <a href="/">Go Back</a>
-
-        </main>
-
-        <footer>
-            <hr />
-            <p>&copy; <time>2017</time> {{ site.author }}</p>
-        </footer>
-
-        <script src="{{site.baseurl}}/scripts.js"></script>
-    </body>
-
-</html>
+  <!-- fix section start here-->
+        <div class="section sec-fix contentpg" id="fix">
+            <div class="container cf">
+                <h2>Squished Bugs<br />PC</h2>
+                <div class="row" style="margin:0 auto;">
+                    <div class="col-1 col contentpgcol">
+                        <div class="fix-area">
+                            <div class="fix-description alert-description contentpgbox">
+                                <ul class="list-style">
+                                    {% for post in site.pc-patches %}
+                                    <li>{{ post.title }}</li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--fix section end here-->
+        
+        <div class="preload"><img src="images/menu-overlay.jpg" alt="" /></div>
+        <!--released section end here-->
+        
+       {% include footer.html %}
