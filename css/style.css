@@ -885,9 +885,9 @@ body.menuOverlap .enumenu_ul {
     position: relative;
     margin-bottom: 35px;
     margin-top: 13px;
-    -webkit-box-shadow: 2px 3px 5px -3px rgba(0, 0, 0, 0.66);
-    -moz-box-shadow: 2px 3px 5px -3px rgba(0, 0, 0, 0.66);
-    box-shadow: 2px 3px 5px -3px rgba(0, 0, 0, 0.66);
+    -webkit-box-shadow: -1px 1px 1px 1px rgba(0, 0, 0, 0.10);
+    -moz-box-shadow: -1px 1px 1px 1px rgba(0, 0, 0, 0.10);
+    box-shadow: -1px 1px 1px 1px rgba(0, 0, 0, 0.10);
 }
 .upcoming-post:hover {
     opacity:.85;
@@ -969,9 +969,9 @@ body.menuOverlap .enumenu_ul {
     height: 172px;
     background-color: #242424;
     overflow: hidden;
-    -webkit-box-shadow: 2px 3px 5px -3px rgba(0, 0, 0, 0.66);
-    -moz-box-shadow: 2px 3px 5px -3px rgba(0, 0, 0, 0.66);
-    box-shadow: 2px 3px 5px -3px rgba(0, 0, 0, 0.66);
+    -webkit-box-shadow: -1px 1px 1px 1px rgba(0, 0, 0, 0.10);
+    -moz-box-shadow: -1px 1px 1px 1px rgba(0, 0, 0, 0.10);
+    box-shadow: -1px 1px 1px 1px rgba(0, 0, 0, 0.10);
 }
 
 .post-block:hover {
@@ -1141,6 +1141,8 @@ body.menuOverlap .enumenu_ul {
 /*anchor links start here*/
 
 #fixes, #upcoming, #released {position:absolute;height:1px;width:1px;margin-top:-80px;}
+
+
 
 
 
