@@ -294,7 +294,29 @@ layout: default
 			    
 			    
 			  
+			        {% for doc in site.documents %}
 			    
+			    {% if doc.collection == "released" %}
+
+			    
+			    
+			    <div class="col-4 col">
+                            <div class="post-block">
+                                <div class="block-area">
+
+                                </div>
+                                <div class="block-overlay">
+                                    <div class="overlay-desc">
+                                        <h3>{{ doc.collection }}</h3>
+                                                                         </div>
+                                </div>
+                            </div>
+                        </div>
+			  
+		       {% endif %}  
+			
+                       {% endfor %} 
+
 			      
 			
             
