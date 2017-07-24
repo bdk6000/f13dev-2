@@ -17,6 +17,9 @@ collections:
   posts:
     title: Posts
     output: true
+  released-packs:
+    title: Released Packs
+    output: true
   released:
     title: Released Patches
     output: true
