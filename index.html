@@ -296,7 +296,8 @@ layout: default
 			  
 			    
 			      
-			    {% for post in site.collections limit:5 %}
+			    {% for post in site.documents limit:5 %}
+			    
 			    <div class="col-4 col">
                             <div class="post-block" onclick="javascript:location.href='{{ post.url }}'">
                                 <div class="block-area">
