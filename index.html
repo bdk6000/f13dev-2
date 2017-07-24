@@ -301,7 +301,7 @@ layout: default
 		
 			    
 			  <div class="col-4 col">
-                            <div class="post-block" onclick="javascript:location.href='{{ doc.url }}'">
+                            <div class="post-block{% if doc.collection == 'released-packs' %} post-img-block{% endif %}" onclick="javascript:location.href='{{ doc.url }}'">
                                 <div class="block-area">
 
                                 </div>
