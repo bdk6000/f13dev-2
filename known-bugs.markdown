@@ -1,6 +1,6 @@
 ---
 title: Known Bugs
-date: 2017-07-02 02:04:00 Z
+date: 2017-07-01 22:04:00 -04:00
 layout: known-bugs-full
 ---
 

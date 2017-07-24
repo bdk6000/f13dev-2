@@ -1,6 +1,6 @@
 ---
 title: Fixed Jason getting stuck in a chop loop when breaking down doors
-date: 2017-07-02 02:02:00 Z
+date: 2017-07-01 22:02:00 -04:00
 position: 2
 ---
 

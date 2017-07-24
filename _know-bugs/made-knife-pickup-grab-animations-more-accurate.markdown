@@ -1,6 +1,6 @@
 ---
 title: Made knife pickup grab animations more accurate.
-date: 2017-07-02 02:03:00 Z
+date: 2017-07-01 22:03:00 -04:00
 position: 6
 ---
 

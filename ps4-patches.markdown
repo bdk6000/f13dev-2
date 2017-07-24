@@ -1,6 +1,6 @@
 ---
 title: PS4 Patches
-date: 2017-07-02 01:55:00 Z
+date: 2017-07-01 21:55:00 -04:00
 layout: ps4-full
 ---
 

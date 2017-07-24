@@ -1,50 +1,23 @@
 ---
-title: F13dev 2
-timezone: UTC
+title: Friday the 13th The Game
+timezone: America/New_York
 collections:
-  future-releases:
-    title: Future Releases
-    output: true
-  know-bugs:
-    title: Known Bugs
-    output: true
-  pc-patches:
-    title: PC Patches
-    output: true
-  ps4-patches:
-    title: PS4 Patches
-    output: true
   posts:
     title: Posts
-    output: true
-  released:
-    title: Released
     output: true
   uploads:
     title: Uploads
     output: true
-  xbox-one-patches:
-    title: Xbox One Patches
-    output: true
 defaults:
 - scope:
     path: ''
-    type: released
+    type: posts
   values:
-    image: ''
-name: F13 Dev Notes
-description: Developer notes for Friday the 13th
-author: F13 Dev Notes
-author_email: you@example.com
-category_dir: "/"
-baseurl: 
-url: http://yourdomain.com/
+    layout: post
+    permalink: "/posts/:title/"
+- scope:
+    path: ''
+    type: pages
+  values:
+    layout: page
 permalink: pretty
-paginate: 3
-exclude:
-- README.markdown
-- package.json
-- grunt.js
-- Gruntfile.js
-- Gruntfile.coffee
-- node_modules

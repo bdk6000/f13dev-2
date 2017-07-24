@@ -1,6 +1,6 @@
 ---
 title: This is a Draft
-date: 2017-07-02 00:48:29.648000000 Z
+date: 2017-07-01 20:48:29.648000000 -04:00
 categories:
 - Meta
 layout: post
