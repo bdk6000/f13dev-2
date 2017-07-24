@@ -298,7 +298,7 @@ layout: default
 			      
 			    {% for post in site.documents limit:5 %}
 			    
-			    {% if doc.collection == "released" %}
+			    
 			    
 			    <div class="col-4 col">
                             <div class="post-block" onclick="javascript:location.href='{{ post.url }}'">
@@ -307,14 +307,14 @@ layout: default
                                 </div>
                                 <div class="block-overlay">
                                     <div class="overlay-desc">
-                                        <h3><a href="#">{{ post.title }}</a></h3>
+                                        <h3><a href="#">{{ doc.collection }} - {{ post.title }}</a></h3>
                                         <span>{{ post.date | date: "%-m.%-d.%y" }}</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
 			    
-			    {% endif %}
+			
                        {% endfor %}
             
 			    
