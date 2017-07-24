@@ -125,9 +125,9 @@
     }
     .menu-icon.active .menu-box {
         position: fixed;
-        top: 23px;
-        right: 20px;
-    }
+        top: 26px;
+        right: 23px;
+}
     .main-nav ul li {
         display: block;
         margin-bottom: 30px;
@@ -302,7 +302,7 @@
         right: 15px;
     }
     .menu-icon.active .menu-box {
-        right: 15px;
+        right: 22px;
     }
     .section {
         padding: 55px 0;
@@ -394,5 +394,21 @@
     .fix-description {
         width: 290px;
         margin: 0 auto;
+    }
+}
+
+/*---- Larger Screens ----*/
+@media (min-width:1600px) {
+    .container {
+      	max-width:1200px;
+    }
+    .sbHolder {
+        width:370px !important;
+    }
+    .sec-fix .col {
+        padding: 0 93px;
+    }
+    .bug-description .tabs li {
+        width: 32.43%;
     }
 }
