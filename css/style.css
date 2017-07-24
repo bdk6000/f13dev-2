@@ -494,13 +494,13 @@ figure {
     padding: 9px 20px;
     display: inline-block;
     background-color: #BC0000;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     border-radius: 25px;
 }
 .btn:hover {
-    background-color: #fff;
-    color: #BC0000
+    background-color: #980000;
+    color: #EFEFE3;
 }
 
 /*----- Common End -----*/
@@ -528,28 +528,35 @@ figure {
     font-size: 0;
 }
 .menu-icon .menu-box {
-    width: 45px;
+    width: 36px;
     height: 38px;
     margin-right: 10px;
     padding: 5px;
     position: absolute;
-    right: 20px;
+    right: 15px;
     z-index: 999;
-    top: 23px;
+    top: 27px;
 }
 .menu-icon .menu-box span {
     width: 100%;
-    height: 4px;
-    margin-bottom: 6px;
-    background: #BC0000;
+    height: 2px;
+    margin-bottom: 5px;
+    background: #EE2E24;
     display: block;
-    border-radius: 2px;
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
 }
 .menu-icon.active span:nth-child(1) {
-    transform: rotate(45deg) translateY(8px) translateX(7px);
-    -webkit-transform: rotate(45deg) translateY(8px) translateX(7px);
+    transform: rotate(45deg) translateY(-1px) translateX(15px);
+    -webkit-transform: rotate(45deg) translateY(-1px) translateX(15px);
+}
+
+.menu-icon.active span:nth-child(2) {
+    opacity: 0;
+}
+.menu-icon.active span:nth-child(3) {
+    transform: rotate(-45deg) translateY(5px) translateX(11px);
+    -webkit-transform: rotate(-45deg) translateY(5px) translateX(11px);
 }
 
 body.menuslide_push .enumenu_ul,
@@ -592,14 +599,6 @@ body.menuOverlap .enumenu_ul {
     -webkit-transform: rotate(90deg) translateX(8px);
 }*/
 
-.menu-icon.active span:nth-child(2) {
-    opacity: 0;
-}
-.menu-icon.active span:nth-child(3) {
-    transform: rotate(-45deg) translateY(-7px) translateX(7px);
-    -webkit-transform: rotate(-45deg) translateY(-7px) translateX(7px);
-}
-
 /*.menu-icon.hover:not(.active) span:nth-child(3) {
     transform: rotate(-90deg) translateX(6px);
     -webkit-transform: rotate(-90deg) translateX(6px);
@@ -610,7 +609,7 @@ body.menuOverlap .enumenu_ul {
     margin-left: 7px;
 }
 #header {
-    background-color: #171717;
+    background-color: rgba(23, 23, 23, 0.95);
     padding: 10px 0;
     position: fixed;
     width: 100%;
@@ -666,7 +665,7 @@ body.menuOverlap .enumenu_ul {
     background-image: url(../images/banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center 80px;
+    background-position: center 0px;
 }
 .banner .container {
     position: relative;
@@ -705,7 +704,7 @@ body.menuOverlap .enumenu_ul {
     transform: translate(0, -50%);
 }
 .post-area .post-text span {
-    font-size: 18px;
+    font-size: 22px;
     color: #C8C8C8;
     line-height: 1.6;
 }
@@ -805,7 +804,8 @@ body.menuOverlap .enumenu_ul {
     width: 31.33%;
     text-align: center;
     cursor: pointer;
-    line-height: 1
+    line-height: 1;
+    font-size: 14px;
 }
 .bug-description .tabs li:last-of-type {
     margin-right: 0;
@@ -872,7 +872,7 @@ body.menuOverlap .enumenu_ul {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    border-bottom: 1px solid #BC0000;
+    border-bottom: 2px solid #BC0000;
     padding: 68px 0;
 }
 .upcoming-area {
@@ -885,6 +885,9 @@ body.menuOverlap .enumenu_ul {
     position: relative;
     margin-bottom: 35px;
     margin-top: 13px;
+    -webkit-box-shadow: 2px 3px 5px -3px rgba(0, 0, 0, 0.66);
+    -moz-box-shadow: 2px 3px 5px -3px rgba(0, 0, 0, 0.66);
+    box-shadow: 2px 3px 5px -3px rgba(0, 0, 0, 0.66);
 }
 .upcoming-post:hover {
     opacity:.85;
@@ -966,6 +969,9 @@ body.menuOverlap .enumenu_ul {
     height: 172px;
     background-color: #242424;
     overflow: hidden;
+    -webkit-box-shadow: 2px 3px 5px -3px rgba(0, 0, 0, 0.66);
+    -moz-box-shadow: 2px 3px 5px -3px rgba(0, 0, 0, 0.66);
+    box-shadow: 2px 3px 5px -3px rgba(0, 0, 0, 0.66);
 }
 
 .post-block:hover {
@@ -1135,3 +1141,13 @@ body.menuOverlap .enumenu_ul {
 /*anchor links start here*/
 
 #fixes, #upcoming, #released {position:absolute;height:1px;width:1px;margin-top:-80px;}
+
+
+
+
+
+
+
+
+
+
