@@ -2,6 +2,9 @@
 title: Friday the 13th The Game
 timezone: America/New_York
 collections:
+  future-releases:
+    title: Future Releases
+    output: true
   known-bugs:
     title: Known Bugs
     output: true
