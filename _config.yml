@@ -8,6 +8,9 @@ collections:
   uploads:
     title: Uploads
     output: true
+  xbox-one-patches:
+    title: Xbox One Patches
+    output: true
 defaults:
 - scope:
     path: ''
