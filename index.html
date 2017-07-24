@@ -294,9 +294,10 @@ layout: default
 			    
 			    
 			    
-			    
-			{% for post in site.documents limit:5 %}    
-			    <div class="col-4 col">
+			    {% for doc in site.documents limit:5 %}
+  {% if doc.collection == "released" or doc.collection == "released-packs" %}
+
+		<div class="col-4 col">
                             <div class="post-block" onclick="javascript:location.href='{{ post.url }}'">
                                 <div class="block-area">
 
@@ -308,9 +309,11 @@ layout: default
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                       {% endfor %}
+                        </div>	    
 			    
+  {% endif %}
+{% endfor %}
+			
 			    
 			    
 			 
