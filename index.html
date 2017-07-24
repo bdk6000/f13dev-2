@@ -3,119 +3,423 @@ title: Home
 layout: default
 ---
 
-<div style="margin-top:40px;margin-bottom:40px;"></div>
-
-<center><h2>Current</h2></center>
-
-<div style="margin-top:40px;margin-bottom:40px;">
-<hr />
-</div>
-
-<div style="width:45%;float:left;padding-right:45px;">
-<div class="tab">
-  <button class="tablinks active" onclick="openCity(event, 'Xbox')">Xbox One</button>
-  <button class="tablinks" onclick="openCity(event, 'PS4')">PS4</button>
-  <button class="tablinks" onclick="openCity(event, 'PC')">PC</button>
-</div>
-
-<div id="Xbox" class="tabcontent" style="display:block;">
-   {% for post in site.xbox-one-patches limit:5 %}
-        <ul>
-          <li><span style="font-size: 15px;">{{ post.title }}</span></li>
-        </ul>
-
-    {% endfor %}
-  <p><a href="/xbox-one-patches">Read Full List</a></p>
-</div>
-
-<div id="PS4" class="tabcontent">
-   {% for post in site.ps4-patches limit:5 %}
-        <ul>
-          <li><span style="font-size: 15px;">{{ post.title }}</span></li>
-        </ul>
-    {% endfor %}
-  <p><a href="/ps4-patches">Read Full List</a></p>
-</div>
-
-<div id="PC" class="tabcontent">
-{% for post in site.pc-patches limit:5 %}
-        <ul>
-          <li><span style="font-size: 15px;">{{ post.title }}</span></li>
-        </ul>
-    {% endfor %}
-  <p><a href="/pc-patches">Read Full List</a></p>
-</div>
-</div>
 
 
-<div style="width:45%;float:left;">
-<h3>Known Bugs</h3>
+        <!-- banner area start here-->
+        <div class="banner">
+            <div class="container">
+                <div class="banner-text">
+                    <h1>We&#8217;re Going <span class="breakhidemob"><br></span>to PAX</h1>
+                </div>
+            </div>
+        </div>
+        <!-- banner area end here-->
+        <!--post section start here-->
+        <div class="post-section cf">
+            <div class="col col-4 no-padding">
+                <div class="post-area">
+                    <div class="post-img">
+                        <img src="images/image-1.jpg" alt=" " />
+                    </div>
+                    <div class="post-text">
+                        <span> July 31</span>
+                        <h3>Spring Break 1984 <br>
+                   Clothing Pack</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-4 no-padding">
+                <div class="post-area midbox">
+                    <div class="post-img">
+                        <img src="images/image-2.jpg" alt=" " />
+                    </div>
+                    <div class="post-text">
+                        <span>Aug 4</span>
+                        <h3>New Playable Maps<br>
+                   "Jarvis House"</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-4 no-padding">
+                <div class="post-area">
+                    <div class="post-img">
+                        <img src="images/image-3.jpg" alt=" " />
+                    </div>
+                    <div class="post-text">
+                        <span>July 31</span>
+                        <h3>Spring Break 1984 <br>
+                   Clothing Pack</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--post section start here-->
+        <!-- fix section start here-->
+        <div id="fixes"></div>
+            <div class="section sec-fix" id="fix">
+            <div class="container cf">
+                <h2>Fixes</h2>
+                <div class="row">
+                    <div class="col-2 col">
+                        <div class="fix-area">
+                            <div class="fix-icon">
+                                <img src="images/fix-img.png" width="72" height="72" alt=" " />
+                            </div>
+                            <div class="bug-description">
+                                <div id="horizontalTab">
+                                    <ul class="tabs">
+                                        <li class="tab-link current" data-tab="tab-1">XBOX ONE</li>
+                                        <li class="tab-link" data-tab="tab-2">PS4</li>
+                                        <li class="tab-link" data-tab="tab-3">PC</li>
+                                    </ul>
+                                    <div class="resp-tabs-container">
+                                        <div id="tab-1" class="tab-content current">
+                                            <h3>XBOX ONE Squished bugs</h3>
+                                            <ul class="list-style">
+                                            {% for post in site.xbox-one-patches limit:5 %}
+                                                <li>{{ post.title }}</li>
+											{% endfor %}
+                                            </ul>
+                                            <div class="cta">
+                                                <a href="/xbox-one-patches" class="btn" title="Read all">Read all</a>
+                                            </div>
+                                        </div>
+                                        <div id="tab-2" class="tab-content">
+                                        <h3>PS4 Squished bugs</h3>
+                                            <ul class="list-style">
+                                                <li>New intro cinematics for Tommy Jarvis spawn,Game Intro,and Game Outro</li>
+                                                <li>Fixed crash for VoIP that would during gameplay</li>
+                                                <li>Fix for out of memory crash with a bug in the texture system bloating out textures after playing a couple of rounds.</li>
+                                                <li>New intro cinematics for Tommy Jarvis spawn, Game Intro, and Game Outro</li>
+                                            </ul>
+                                            <div class="cta">
+                                                <a href="#" class="btn" title="Read all">Read all</a>
+                                            </div>
+                                        </div>
+                                        <div id="tab-3" class="tab-content">
+                                        <h3> PC Squished bugs</h3>
+                                            <ul class="list-style">
+                                                <li>New intro cinematics for Tommy Jarvis spawn,Game Intro,and Game Outro</li>
+                                                <li>Fixed crash for VoIP that would during gameplay</li>
+                                                <li>Fix for out of memory crash with a bug in the texture system bloating out textures after playing a couple of rounds.</li>
+                                                <li>New intro cinematics for Tommy Jarvis spawn, Game Intro, and Game Outro</li>
+                                            </ul>
+                                            <div class="cta">
+                                                <a href="#" class="btn" title="Read all">Read all</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2 col">
+                        <div class="fix-area">
+                            <div class="fix-icon alert">
+                                <img src="images/alert-img.png" width="72" height="72" alt=" " />
+                            </div>
+                            <div class="fix-description alert-description">
+                                <h3>Known Issues</h3>
+                                <ul class="list-style">
+                                    <li>New intro cinematics for Tommy Jarvis spawn, Game Intro, and Game Outro</li>
+                                    <li>Fixed crash for VoIP that would during gameplay</li>
+                                    <li>Fix for out of memory crash with a bug in the texture system bloating out textures after playing a couple of rounds.</li>
+                                    <li>New intro cinematics for Tommy Jarvis spawn, Game Intro, and Game Outro</li>
+                                    <li>Fixed crash for VoIP that would during gameplay</li>
+                                </ul>
+                                <a href="#" class="btn" title="Read all">Read all</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--fix section end here-->
+        <!-- fix section start here-->
+    <div id="upcoming"></div>
+        <div class="section sec-upcoming">
+            <div class="container">
+                <h2>Upcoming</h2>
+                <div class="upcoming-row">
+                    <div class="heading-area">
+                        <h2>JUL</h2>
+                    </div>
+                    <div class="upcoming-area cf">
+                        <div class="row">
+                            <div class="col col-4">
+                                <div class="upcoming-post">
+                                    <figure>
+                                        <img src="images/upcoming-img1.jpg" alt=" " />
+                                    </figure>
+                                    <div class="overlay">
+                                        <div class="overlay-desc">
+                                            <h3><a href="#">Spring Break 1984 <br>
+                                                Clothing Pack</a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-4">
+                                <div class="upcoming-post">
+                                    <figure>
+                                        <img src="images/upcoming-img2.jpg" alt=" " />
+                                    </figure>
+                                    <div class="overlay">
+                                        <div class="overlay-desc">
+                                            <h3><a href="#">Five New <br>
+                                                Counselors</a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-4">
+                                <div class="upcoming-post">
+                                    <figure>
+                                        <img src="images/upcoming-img3.jpg" alt=" " />
+                                    </figure>
+                                    <div class="overlay">
+                                        <div class="overlay-desc">
+                                            <h3><a href="#">Three Smaller <br>
+                                                Versions of Maps</a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="upcoming-row">
+                    <div class="heading-area">
+                        <h2>AUG</h2>
+                    </div>
+                    <div class="upcoming-area cf">
+                        <div class="row">
+                            <div class="col col-4">
+                                <div class="upcoming-post">
+                                    <figure>
+                                        <img src="images/upcoming-img4.jpg" alt=" " />
+                                    </figure>
+                                    <div class="overlay">
+                                        <div class="overlay-desc">
+                                            <h3><a href="#">Lingerie and <br>
+                                                Pajamas <br>
+                                                Clothing Pack</a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-4">
+                                <div class="upcoming-post">
+                                    <figure>
+                                        <img src="images/upcoming-img5.jpg" alt=" " />
+                                    </figure>
+                                    <div class="overlay">
+                                        <div class="overlay-desc">
+                                            <h3><a href="#">New Playable Maps<br>
+                                                "Jarvis House"</a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col col-4">
+                                <div class="upcoming-post">
+                                    <figure>
+                                        <img src="images/upcoming-img6.jpg" alt=" " />
+                                    </figure>
+                                    <div class="overlay">
+                                        <div class="overlay-desc">
+                                            <h3><a href="#">New Playable Jason<br>
+                                                from Part 4</a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--upcoming section end here-->
 
-  {% for post in site.know-bugs limit:5 %}
-        <ul>
-          <li><span style="font-size: 15px;">{{ post.title }}</span></li>
-        </ul>
+        <!-- released section start here -->
+    <div id="released"></div>
+        <div class="section sec-released">
+            <div class="container">
+                <h2>Released</h2>
+                <div class="select-area cf">
+                    <select class="selectbox">
+                        <option value="">Recent</option>
+                        <option value="XBOX">XBOX ONE Patch Notes </option>
+                        <option value="PS4">PS4 Patch Notes</option>
+                        <option value="PC">PC Patch Notes</option>
+                        <option value="DLC">DLC</option>
+                    </select>
+                </div>
+                <div class="released-post cf">
+                    <div class="row">
+                        <div class="col-4 col">
+                            <div class="post-block">
+                                <div class="block-area">
 
-    {% endfor %}
-  <p><a href="/known-bugs">Read Full List</a></p>
-  
-</div>
+                                </div>
+                                <div class="block-overlay">
+                                    <div class="overlay-desc">
+                                        <h3><a href="#">Patch Notes<br>XBOX ONE</a></h3>
+                                        <span>6.30.17</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 col">
+                            <div class="post-block">
+                                <div class="block-area">
 
-<div style="clear:both;"></div>
+                                </div>
+                                <div class="block-overlay">
+                                    <div class="overlay-desc">
+                                        <h3><a href="#">Patch Notes<br>PS4</a></h3>
+                                        <span>6.15.17</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 col">
+                            <div class="post-block post-img-block">
+                                <div class="block-area ">
+                                    <div class="block-img" style="background-image:url(images/release-img1.jpg)"></div>
+                                </div>
+                                <div class="block-overlay">
+                                    <div class="overlay-desc">
+                                        <h3><a href="#">Savini<br>
+                                            Jason</a>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 col">
+                            <div class="post-block">
+                                <div class="block-area">
 
-<div style="margin-top:40px;margin-bottom:40px;">
-<hr />
-</div>
+                                </div>
+                                <div class="block-overlay">
+                                    <div class="overlay-desc">
+                                        <h3><a href="#">Patch Notes<br>PC</a></h3>
+                                        <span>6.5.17</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 col">
+                            <div class="post-block">
+                                <div class="block-area">
 
-<center><h2>Future</h2></center>
+                                </div>
+                                <div class="block-overlay">
+                                    <div class="overlay-desc">
+                                        <h3><a href="#">Patch Notes<br>XBOX ONE</a></h3>
+                                        <span>6.3.17</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 col">
+                            <div class="post-block">
+                                <div class="block-area">
 
-<div style="margin-top:40px;margin-bottom:40px;">
-<hr />
-</div>
+                                </div>
+                                <div class="block-overlay">
+                                    <div class="overlay-desc">
+                                        <h3><a href="#">Patch Notes<br>XBOX ONE</a></h3>
+                                        <span>6.3.17</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 col">
+                            <div class="post-block">
+                                <div class="block-area">
 
-  {% for post in site.future-releases %}
-            <ul>
-          <li style="width:45%;float:left;padding-right:40px;"><span style="font-size: 15px;">{{ post.title }}</span><br /><br /><img style="width:100%;height:auto;" src="{{ post.image }}" /></li>
-        </ul>
+                                </div>
+                                <div class="block-overlay">
+                                    <div class="overlay-desc">
+                                        <h3><a href="#">Patch Notes<br>XBOX ONE</a></h3>
+                                        <span>6.30.17</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 col">
+                            <div class="post-block">
+                                <div class="block-area">
 
-    {% endfor %}
+                                </div>
+                                <div class="block-overlay">
+                                    <div class="overlay-desc">
+                                        <h3><a href="#">Patch Notes<br>PS4</a></h3>
+                                        <span>6.15.17</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 col">
+                            <div class="post-block post-img-block">
+                                <div class="block-area ">
+                                    <div class="block-img" style="background-image:url(images/release-img2.jpg)"></div>
 
-<div style="clear:both;"></div>
+                                </div>
+                                <div class="block-overlay">
+                                    <div class="overlay-desc">
+                                        <h3><a href="#">Clothing <br>
+                                            Pack #1</a>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 col">
+                            <div class="post-block">
+                                <div class="block-area">
 
-<div style="margin-top:40px;margin-bottom:40px;">
-<hr />
-</div>
+                                </div>
+                                <div class="block-overlay">
+                                    <div class="overlay-desc">
+                                        <h3><a href="#">Patch Notes<br>PC</a></h3>
+                                        <span>6.5.17</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 col">
+                            <div class="post-block">
+                                <div class="block-area">
 
-<center><h2>Released</h2></center>
+                                </div>
+                                <div class="block-overlay">
+                                    <div class="overlay-desc">
+                                        <h3><a href="#">Patch Notes<br>XBOX ONE</a></h3>
+                                        <span>6.3.17</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 col">
+                            <div class="post-block">
+                                <div class="block-area">
 
-<div style="margin-top:40px;margin-bottom:40px;">
-<hr />
-</div>
-
-  {% for post in site.released %}
-            <ul>
-          <li style="width:20%;float:left;padding-right:40px;"><span style="font-size: 15px;">{{ post.title }}</span><br /><br /><img style="width:100%;height:auto;" src="{{ post.image }}" /></li>
-        </ul>
-
-    {% endfor %}
-
-<div style="clear:both;"></div>
-
-<script>
-function openCity(evt, cityName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
-}
-</script>
-
-<div style="margin-top:40px;margin-bottom:40px;">&nbsp;</div>
+                                </div>
+                                <div class="block-overlay">
+                                    <div class="overlay-desc">
+                                        <h3><a href="#">Patch Notes<br>PS4</a></h3>
+                                        <span>6.1.17</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="preload"><img src="images/menu-overlay.jpg" alt="" /><img src="images/banner.jpg" alt="" /></div>
+        <!--released section end here-->
 
