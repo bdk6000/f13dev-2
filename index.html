@@ -298,6 +298,8 @@ layout: default
 			      
 			    {% for doc in site.documents limit:5 %}
 			    
+			    {% if doc.collection == "future-releases" %}
+
 			    
 			    
 			    <div class="col-4 col">
@@ -313,7 +315,8 @@ layout: default
                                 </div>
                             </div>
                         </div>
-			    
+			  
+{% endif %}  
 			
                        {% endfor %}
             
