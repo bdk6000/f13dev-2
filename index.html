@@ -253,165 +253,30 @@ layout: default
                 </div>
                 <div class="released-post cf">
                     <div class="row">
-                        <div class="col-4 col">
+                       
+			    
+			    
+			   
+			    
+			    {% for post in site.released limit:5 %}
+			    <div class="col-4 col">
                             <div class="post-block">
                                 <div class="block-area">
 
                                 </div>
                                 <div class="block-overlay">
                                     <div class="overlay-desc">
-                                        <h3><a href="#">Patch Notes<br>XBOX ONE</a></h3>
-                                        <span>6.30.17</span>
+                                        <h3><a href="#">{{ post.title }}</a></h3>
+                                        <span>{{ post.date }}</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4 col">
-                            <div class="post-block">
-                                <div class="block-area">
-
-                                </div>
-                                <div class="block-overlay">
-                                    <div class="overlay-desc">
-                                        <h3><a href="#">Patch Notes<br>PS4</a></h3>
-                                        <span>6.15.17</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-4 col">
-                            <div class="post-block post-img-block">
-                                <div class="block-area ">
-                                    <div class="block-img" style="background-image:url(images/release-img1.jpg)"></div>
-                                </div>
-                                <div class="block-overlay">
-                                    <div class="overlay-desc">
-                                        <h3><a href="#">Savini<br>
-                                            Jason</a>
-                                        </h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-4 col">
-                            <div class="post-block">
-                                <div class="block-area">
-
-                                </div>
-                                <div class="block-overlay">
-                                    <div class="overlay-desc">
-                                        <h3><a href="#">Patch Notes<br>PC</a></h3>
-                                        <span>6.5.17</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-4 col">
-                            <div class="post-block">
-                                <div class="block-area">
-
-                                </div>
-                                <div class="block-overlay">
-                                    <div class="overlay-desc">
-                                        <h3><a href="#">Patch Notes<br>XBOX ONE</a></h3>
-                                        <span>6.3.17</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-4 col">
-                            <div class="post-block">
-                                <div class="block-area">
-
-                                </div>
-                                <div class="block-overlay">
-                                    <div class="overlay-desc">
-                                        <h3><a href="#">Patch Notes<br>XBOX ONE</a></h3>
-                                        <span>6.3.17</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-4 col">
-                            <div class="post-block">
-                                <div class="block-area">
-
-                                </div>
-                                <div class="block-overlay">
-                                    <div class="overlay-desc">
-                                        <h3><a href="#">Patch Notes<br>XBOX ONE</a></h3>
-                                        <span>6.30.17</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-4 col">
-                            <div class="post-block">
-                                <div class="block-area">
-
-                                </div>
-                                <div class="block-overlay">
-                                    <div class="overlay-desc">
-                                        <h3><a href="#">Patch Notes<br>PS4</a></h3>
-                                        <span>6.15.17</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-4 col">
-                            <div class="post-block post-img-block">
-                                <div class="block-area ">
-                                    <div class="block-img" style="background-image:url(images/release-img2.jpg)"></div>
-
-                                </div>
-                                <div class="block-overlay">
-                                    <div class="overlay-desc">
-                                        <h3><a href="#">Clothing <br>
-                                            Pack #1</a>
-                                        </h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-4 col">
-                            <div class="post-block">
-                                <div class="block-area">
-
-                                </div>
-                                <div class="block-overlay">
-                                    <div class="overlay-desc">
-                                        <h3><a href="#">Patch Notes<br>PC</a></h3>
-                                        <span>6.5.17</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-4 col">
-                            <div class="post-block">
-                                <div class="block-area">
-
-                                </div>
-                                <div class="block-overlay">
-                                    <div class="overlay-desc">
-                                        <h3><a href="#">Patch Notes<br>XBOX ONE</a></h3>
-                                        <span>6.3.17</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-4 col">
-                            <div class="post-block">
-                                <div class="block-area">
-
-                                </div>
-                                <div class="block-overlay">
-                                    <div class="overlay-desc">
-                                        <h3><a href="#">Patch Notes<br>PS4</a></h3>
-                                        <span>6.1.17</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                       {% endfor %}
+			    
+			    
+			    
+			 
                     </div> 
                 </div>
             </div>
