@@ -5,7 +5,7 @@ collections:
   future-releases:
     title: Future Releases
     output: true
-  known-bugs:
+  know-bugs:
     title: Known Bugs
     output: true
   pc-patches:
