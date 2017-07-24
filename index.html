@@ -313,6 +313,25 @@ layout: default
 			    
              {% endif %}
              {% endfor %}
+			    
+			    
+			    {% assign documents = site.documents | sort: 'date' | reverse %}
+
+{% for document in documents limit:10 %}
+  <div class="col-4 col">
+                            <div class="post-block" onclick="javascript:location.href='{{ post.url }}'">
+                                <div class="block-area">
+
+                                </div>
+                                <div class="block-overlay">
+                                    <div class="overlay-desc">
+                                        <h3><a href="#">{{ post.title }}</a></h3>
+                                        <span>{{ post.date | date: "%-m.%-d.%y" }}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>	 
+{% endfor %}
 			
 			    
 			    
