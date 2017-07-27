@@ -23,6 +23,9 @@ collections:
   released:
     title: Released Patches
     output: true
+  uploads:
+    title: Uploads
+    output: true
   xbox-one-patches:
     title: Xbox One Patches
     output: true
